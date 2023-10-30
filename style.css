@@ -1,0 +1,102 @@
+body{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-color: #1a2434;
+    font-family: Quicksand;
+    color: white;
+    width: 100pw;
+    height: 100pw;
+
+}
+
+/* Mise en page header*/
+header{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 33vw 33vw 33vw;
+}
+
+.socialMedia{
+    grid-column: 3;
+    grid-row :1;
+    justify-self: end;
+    padding-top: 15px;
+    padding-right: 8px;
+    align-self: center;
+}
+
+.facebook, .instagram{
+    margin-right: 8px;
+}
+
+h2{
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
+    padding-left: 50px;
+    padding-top: 0.5em;
+}
+
+#logo{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 1em;
+    margin-left: 1em;
+    
+}
+
+.burger{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
+}
+
+#actualites, #boutique{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#menu{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 4em;
+    padding-top: 0.5em;
+}
+
+a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+#actualites{
+    justify-self: start;
+    align-self: center;
+    padding-top: 0.5em;
+}
+
+#boutique{
+    justify-self: center;
+    align-self: center;
+    padding-top: 0.5em;
+    padding-left: 2.5em;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.banniere{
+    display: flex;
+   background-color: #D3DFF2;
+   color: #1a2434;
+   justify-content: center;
+   padding: 1em;
+   align-items: center;
+   gap: 20px;
+}
