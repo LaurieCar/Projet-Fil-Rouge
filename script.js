@@ -58,7 +58,7 @@ document.body.onload = function(){
     for(let i=1; i<=nbr; i++){
         div=document.createElement("div");
         div.className="photo";
-        div.style.backgroundImage = "url('images/imageCarrousel"+i+".jpg')";
+        div.style.backgroundImage = "url('images/carrousel"+i+".svg')";
         // Rajout des div créés au conteneur
         container.appendChild(div);
     }

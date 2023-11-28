@@ -12,6 +12,7 @@ header{
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 33vw 33vw 33vw;
+    z-index: 4000;
 }
 
 .socialMedia{
@@ -42,6 +43,7 @@ h2{
     margin-left: 1.5em;
     padding-bottom: 1em;
     
+    
 }
 
 .burger{
@@ -50,6 +52,7 @@ h2{
     justify-self: center;
     align-self: center;
     margin-top: 20px;
+    z-index: 4;
 }
 
 svg{
@@ -62,7 +65,9 @@ svg:hover{
 .menu-cb{
     appearance: none;
 }
-
+.menu-label{
+    cursor: pointer;
+}
 
 
 #menu{
@@ -118,8 +123,9 @@ ul{
     background-color:#D3DFF2;
     color: #1a2434;
     width: 100%;
-    transform: translateX(100%);
-    z-index: 3;
+    transform: translateX(-100vw);
+    /*z-index: 3;*/
+    transition: all 1.5s ease-in-out;
 }
 .menu-item{
     padding: 1em;
@@ -152,6 +158,7 @@ li:hover{
 }
 #bt:hover{
     transform: scale(1.5);
+    cursor: pointer;
 }
 
 
@@ -179,9 +186,7 @@ main{
 #carrousel{
     width: 1000px;
     height: 600px;
-    border-left: solid #D3DFF2 2px;
-    border-right: solid #D3DFF2 2px;
-    border-bottom: solid #D3DFF2 2px;
+    border: solid #D3DFF2 2px;
     margin-top: 100px;
     position: relative;
     overflow: hidden;
@@ -229,7 +234,7 @@ main{
     grid-template-columns: 25vw 50vw 25vw;
     background: url(images/imageFond.png), lightgray 50% / cover no-repeat;
     margin-top: 100px;
-    /*margin-bottom: 100px;*/
+    
 }
 #presentation{
     grid-column: 2;
@@ -286,4 +291,43 @@ main{
 .footer{
     display: flex;
     justify-content: space-around;
+}
+
+/* Demande d'essai*/
+/*.background{
+    margin-top: 20vh;
+    height: 200vh;
+    /*background: url(/images/bg1.png), lightgray 50% / cover no-repeat;
+    background: url(images/bg1.jpg);
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    align-items: center;
+
+}*/
+h1{
+    text-align: center;
+    color: #C30404;
+    font-size: 2 em;
+    grid-column: 2;
+}
+
+#form{
+    display: grid;
+    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-rows: repeat();
+}
+
+p{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#formulaire{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+input{
+    
+    width: 300px;
 }
