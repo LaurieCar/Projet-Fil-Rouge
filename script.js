@@ -1,6 +1,35 @@
 // SCRIPT MENU NAVIGATION
 
-// Récupération bouton HTML
+// Récupération bouton menu
+const menuButton = document.getElementById("btnopen");
+
+// Ajouter événement sur l'icone burger
+menuButton.addEventListener('click', ()=>{
+    // Récupération id du menu de navigation
+    const menuNav = document.getElementById("menu-nav");
+    if(menuNav.style.display === "none"){
+        menuNav.style.display = "block";
+    }
+    else{
+        menuNav.style.display = "none";
+    }
+})
+
+// Récupération bouton close
+const btnClose = document.getElementById('btnClose');
+
+// Evènement sur le bouton close
+btnClose.addEventListener('click', ()=>{
+    const menuNav = document.getElementById("menu-nav");
+    if(menuNav.style.display === "block"){
+        menuNav.style.display = "none";
+    }
+})
+
+
+
+
+/*// Récupération bouton HTML
 const button = document.getElementById('bt');
 // Récupération input checkbox du menu
 const menuNav = document.querySelector('#menu-cb');

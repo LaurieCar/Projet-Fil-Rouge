@@ -70,8 +70,9 @@ svg:hover{
     display: grid;
     align-content: center;
     justify-content: center;
+    background-color: #1a2434;
+    border: none;
 }
-
 
 #menu{
     grid-column: 1;
@@ -89,7 +90,7 @@ a{
     transition: .1s;
 }
 a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     transform: scale(1.2);
 }
 
@@ -116,18 +117,20 @@ a:hover{
 ul{
     list-style-type: none;
 }
-
-.menu-nav{
-    position: absolute;
-    top: 8em;
-    left: 0;
+#flex{
     display: flex;
+    flex-direction: row;
+    width: 50vw;
+}
+#menu-nav{
+    position: absolute;
+    top: 7.2em;
     justify-content: space-around;
-    background-color:#D3DFF2;
+    background-color:white;
     color: #1a2434;
-    width: 100%;
-    transform: translateX(-100vw);
-    /*z-index: 3;*/
+    display: none;
+    /*transform: translateX(-100vw);*/
+    z-index: 99;
     transition: all 1.5s ease-in-out;
 }
 .menu-item{
@@ -136,31 +139,26 @@ ul{
 }
 .menu-link{
     color: #1a2434;
+    text-decoration: none;
 }
-li{
+/*li{
     transition: .1s;
-}
-li:hover{
-    transform: scale(1.1);
-}
-
-.menu-cb:checked ~ .menu-nav{
-    transform: translateX(0);
-    
+}*/
+.menu-link:hover{
+    background-color: #C30404;
+    transform: scale(1.5);
 }
 
-#bt{
+#btnClose{
     display: flex;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #D3DFF2;
+    background-color: white;
     border-style: none;
     transition: .1s;
-    margin-top: 2em;
+    margin: 1em;
 }
-#bt:hover{
-    transform: scale(1.5);
+#btnClose:hover{
+    transform: scale(1);
     cursor: pointer;
 }
 
@@ -294,70 +292,4 @@ main{
 .footer{
     display: flex;
     justify-content: space-around;
-}
-
-/* Demande d'essai*/
-/*.background{
-    margin-top: 20vh;
-    height: 200vh;
-    /*background: url(/images/bg1.png), lightgray 50% / cover no-repeat;
-    background: url(images/bg1.jpg);
-    opacity: 0.5;
-    background-repeat: no-repeat;
-    align-items: center;
-
-}*/
-h1{
-    text-align: center;
-    color: #C30404;
-    font-size: 2 em;
-    grid-column: 2;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#form{
-    display: grid;
-    grid-template-columns: 25vw 50vw 25vw;
-    grid-template-rows: repeat();
-    margin-top: 5em;
-}
-
-p{
-    grid-column: 2;
-    grid-row: 2;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-}
-
-#formulaire{
-    grid-column: 2;
-    grid-row: 3;
-    background: rgba(26,36,52,0.5);
-    margin-top: 5em;
-    margin-bottom: 5em;
-}
-
-input{
-    width: 20vw;
-    height: 4vh;
-    margin: 2em;
-}
-
-button{
-    font-family: Quicksand;
-    background-color: #C30404;
-    color: white;
-    border: solid white 1px;
-    border-radius: 3px;
-    height: 5vh;
-    width: 10vw;
-    cursor: pointer;
-    margin: 1em;
-}
-
-#message{
-    width: 45vw;
-    height: 20vh;
-    margin: 1em;
-
 }

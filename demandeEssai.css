@@ -1,0 +1,80 @@
+/* Main
+
+.texte_page, .titre_page{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.titre_page{
+    color: #C30404;
+}
+#photo_a_propos1{
+    background: url(./images/a_propos1.png);
+}
+*/
+
+.background{
+    margin-top: 20vh;
+    height: 200vh;
+}
+h1{
+    text-align: center;
+    color: #C30404;
+    font-size: 2 em;
+    grid-column: 2;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#form{
+    display: grid;
+    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-rows: repeat();
+    margin-top: 5em;
+}
+
+p{
+    grid-column: 2;
+    grid-row: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#formulaire{
+    grid-column: 2;
+    grid-row: 3;
+    background: rgba(26,36,52,0.5);
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+input{
+    width: 20vw;
+    height: 4vh;
+    margin: 2em;
+}
+
+button{
+    font-family: Quicksand;
+    background-color: #C30404;
+    color: white;
+    border: solid white 1px;
+    border-radius: 3px;
+    height: 5vh;
+    width: 10vw;
+    cursor: pointer;
+    margin: 1em;
+}
+
+#message{
+    width: 45vw;
+    height: 20vh;
+    margin: 1em;
+}
+
+
+
+
+
+
+
+
+
